@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #fff9f1; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+    .header { text-align: center; padding: 20px; background-color: #ffc107; color: white; }
+    .header img { width: 80px; margin-bottom: 10px; }
+    .cta-button { background-color: #ffc107; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; margin-top: 20px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/thank-you.png" alt="Thank You Icon">
+      <h1>Thank You for Your Purchase!</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>We appreciate your purchase of {{product_name}}. Your order ID is {{order_id}}. You can view your order details below:</p>
+    <a href="{{order_details_link}}" class="cta-button">View Order</a>
+    <p>Thank you for choosing {{company_name}}. We hope to serve you again soon!</p>
+  </div>
+</body>
+</html>

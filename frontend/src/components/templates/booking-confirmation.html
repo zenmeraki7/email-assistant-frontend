@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eef2f7; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+    .header { background-color: #ff9800; color: white; padding: 15px; text-align: center; }
+    .header img { width: 80px; margin-bottom: 10px; }
+    .cta-button { background-color: #ff9800; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; margin-top: 20px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/travel.png" alt="Travel Icon">
+      <h1>Booking Confirmation</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>Your booking has been confirmed! Here are the details:</p>
+    <p><strong>Destination:</strong> {{destination}}</p>
+    <p><strong>Travel Dates:</strong> {{travel_dates}}</p>
+    <a href="{{booking_details_link}}" class="cta-button">View Booking</a>
+    <p>Thank you for choosing {{company_name}} for your travel plans!</p>
+  </div>
+</body>
+</html>

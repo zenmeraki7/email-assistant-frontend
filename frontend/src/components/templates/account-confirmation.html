@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+    .header { text-align: center; padding: 20px; background-color: #4caf50; color: white; }
+    .header img { width: 80px; margin-bottom: 10px; }
+    .cta-button { background-color: #4caf50; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; margin-top: 20px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/account.png" alt="Account Icon">
+      <h1>Welcome to {{company_name}}!</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>Your account has been successfully created. Use the button below to log in and start exploring:</p>
+    <a href="{{login_link}}" class="cta-button">Log In</a>
+    <p>If you didn’t create this account, please contact us immediately at {{support_email}}.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; }
+    .header { text-align: center; padding: 20px; }
+    .cta-button { background-color: #0078d7; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/logo.png" alt="Company Logo" style="width: 100px; height: auto;">
+      <h1>Welcome, {{user_name}}!</h1>
+    </div>
+    <p>We’re so excited to have you on board. Here’s what you can do next:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin-bottom: 10px;">
+        <img src="https://example.com/icons/checkmark.png" alt="Checkmark" style="width: 16px; height: 16px; margin-right: 8px;">
+        Explore your dashboard.
+      </li>
+      <li>
+        <img src="https://example.com/icons/checkmark.png" alt="Checkmark" style="width: 16px; height: 16px; margin-right: 8px;">
+        Customize your settings.
+      </li>
+    </ul>
+    <a href="{{cta_link}}" class="cta-button">Get Started</a>
+  </div>
+</body>
+</html>

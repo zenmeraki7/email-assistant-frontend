@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fffbf0; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; text-align: center; border-radius: 10px; }
+    .header { background-color: #ff9800; color: white; padding: 15px; }
+    .header img { width: 80px; }
+    .cta { background-color: #ff9800; color: white; text-decoration: none; padding: 15px 30px; margin-top: 20px; border-radius: 5px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/discount.png" alt="Discount Icon">
+      <h1>Exclusive Offer Just for You!</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>We’re offering you an exclusive <strong>{{discount_percentage}}% discount</strong> on your next purchase. Hurry, this offer expires soon!</p>
+    <a href="{{discount_link}}" class="cta">Claim Your Discount</a>
+    <p>Expires on: <strong>{{expiration_date}}</strong></p>
+  </div>
+</body>
+</html>

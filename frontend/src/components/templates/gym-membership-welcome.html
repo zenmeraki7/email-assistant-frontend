@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eef9f3; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+    .header { background-color: #4caf50; color: white; padding: 15px; text-align: center; }
+    .header img { width: 80px; margin-bottom: 10px; }
+    .cta-button { background-color: #4caf50; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; margin-top: 20px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/gym.png" alt="Gym Icon">
+      <h1>Welcome to {{gym_name}}!</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>Congratulations on joining {{gym_name}}! We're excited to help you reach your fitness goals. Here's what you can do next:</p>
+    <ul>
+      <li>Explore our <strong>class schedule</strong>.</li>
+      <li>Meet with a <strong>personal trainer</strong>.</li>
+      <li>Access your <strong>membership perks</strong>.</li>
+    </ul>
+    <a href="{{dashboard_link}}" class="cta-button">Access Your Dashboard</a>
+  </div>
+</body>
+</html>

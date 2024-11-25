@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+    .header { background-color: #e91e63; color: white; padding: 15px; text-align: center; }
+    .header img { width: 80px; margin-bottom: 10px; }
+    .cart-item { display: flex; align-items: center; margin: 20px 0; }
+    .cart-item img { width: 80px; height: auto; margin-right: 10px; }
+    .cta-button { background-color: #e91e63; color: white; text-decoration: none; padding: 10px 20px; display: inline-block; margin-top: 20px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://example.com/icons/cart.png" alt="Cart Icon">
+      <h1>Come Back to Your Cart!</h1>
+    </div>
+    <p>Hi {{user_name}},</p>
+    <p>You left some items in your cart. Complete your purchase now before they're gone!</p>
+    <div class="cart-item">
+      <img src="{{item_image}}" alt="Product Image">
+      <div>
+        <h4>{{item_name}}</h4>
+        <p>{{item_price}}</p>
+      </div>
+    </div>
+    <a href="{{cart_link}}" class="cta-button">Return to Your Cart</a>
+  </div>
+</body>
+</html>
