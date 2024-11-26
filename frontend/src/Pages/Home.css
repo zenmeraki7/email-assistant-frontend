@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    /* font-family: 'Arial', sans-serif; */
+    line-height: 1.6;
+  }
+  
+  /* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  } */
+  
+  /* Header Section */
+  .header {
+    /* background: linear-gradient(90deg, #4caf50, #81c784); */
+    color:black;
+    padding: 20px 0;
+    text-align: center;
+   
+  }
+  .carousel-container{
+    border-left: 2px solid #4caf50;
+    border-right: 2px solid #4caf50;
+    border-top: 2px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
+    border-radius: 10px;
+  }
+  
+  .header .title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .header .subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .header .cta-button {
+    padding: 10px 20px;
+    background:  #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .header .cta-button:hover {
+    background: rgba(255, 0, 0, 0.586);
+    color: #ffffff;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px 0;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  
+  .features .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features .feature-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .features .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .features .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .features .icon {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  /* Templates Section */
+  .templates {
+    padding: 50px 0;
+    background: white;
+    text-align: center;
+  }
+  
+  .templates .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: darkolivegreen;
+  }
+  
+  .templates .template-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .templates .template {
+    background: #f4f4f4;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .templates .template:hover {
+    background: #81c784;
+    color: white;
+  }
+  
+  
