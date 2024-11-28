@@ -1,6 +1,7 @@
 import express from "express";
 import { sendEmail } from "../services/emailService.js";
 import Joi from "joi";
+import { upload } from "../middlewares/uploadMiddleware.js";
 
 const router = express.Router();
 
@@ -28,9 +29,17 @@ const emailValidationSchema = Joi.object({
 });
 
 // Route with Validation
-router.post("/send", async (req, res) => {
+router.post("/send", upload.single("logo"), async (req, res) => {
   const { error, value } = emailValidationSchema.validate(req.body);
+  const logo = req.file?.path;
+  console.log(logo);
 
+  if (!logo) {
+    return res.status(400).send({
+      success: false,
+      message: "Missing logo", // Sends the first validation error message
+    });
+  }
   if (error) {
     return res.status(400).send({
       success: false,
@@ -41,7 +50,7 @@ router.post("/send", async (req, res) => {
   const { templateName, to, subject, data, replyTo } = value;
 
   try {
-    await sendEmail(templateName, to, subject, data, replyTo);
+    await sendEmail(templateName, to, subject, { ...data, logo }, replyTo);
     res
       .status(200)
       .send({ success: true, message: "Email sent successfully!" });
