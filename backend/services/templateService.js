@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const loadTemplate = (templateName) => {
-  const templatePath = path.join(__dirname, '../../templates', `${templateName}.html`);
+  const templatePath = path.join(__dirname, '../templates', `${templateName}.html`);
   return fs.readFileSync(templatePath, 'utf8');
 };
 
