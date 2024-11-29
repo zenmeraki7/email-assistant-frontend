@@ -3,9 +3,11 @@ import { Card, Button } from "react-bootstrap";
 import LandingPage from "./LandingPage";
 import { useState } from "react";
 import ViewMore from "../components/ViewMore";
+import Welcome from "../components/Modals/Welcome";
 
 function Home() {
   const [show, setShow] = useState(false);
+  const [showOne, setShowOne] = useState(false);
   return (
     <>
       <div className="landing-page">
@@ -59,7 +61,7 @@ function Home() {
                       src="https://i.pinimg.com/originals/e4/b6/be/e4b6bebc59574c38d54cbd5efd699636.png"
                       className="card-image"
                     />
-                    <button className="choose-button">Choose Template</button>
+                    <button className="choose-button" onClick={() => setShowOne(true)}>Choose Template</button>
                   </div>
                   <Card.Body>
                     <Card.Title>Thank You Mail</Card.Title>
@@ -119,6 +121,7 @@ function Home() {
             </Button>
           </div>
           <ViewMore  show={show} setShow={setShow} />
+          <Welcome show={showOne} setShow={setShowOne}/>
         </section>
       </div>
     </>
