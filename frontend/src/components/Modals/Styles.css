@@ -1,0 +1,26 @@
+.modal-right .modal-dialog {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  transform: translateY(-50%);
+  margin: 0;
+  max-width: 600px; 
+  padding: 5px;
+}
+
+.modal-right .modal-content {
+  border-radius: 10px;
+}
+.inp-box{
+  border-radius: 5px;
+  padding: 2px;
+  width: 300px;
+}
+.change{
+  border: 0;
+  padding: 5px;
+  background-color:#CC2B52;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+}

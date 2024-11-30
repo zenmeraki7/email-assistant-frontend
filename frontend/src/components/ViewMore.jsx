@@ -1,7 +1,4 @@
-
 import { Modal,Card } from "react-bootstrap"
-
-
 
 function ViewMore({show,setShow}) {
     

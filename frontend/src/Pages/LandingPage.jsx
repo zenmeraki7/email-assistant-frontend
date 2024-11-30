@@ -1,13 +1,20 @@
 import './LandingPage.css'
 import landing1 from '../assets/images/landing1.png'
+import img1 from '../assets/images/img1.png'
+import img2 from '../assets/images/img2.png'
+import img3 from '../assets/images/img3.png'
+import Header from '../components/Nav/Header'
+
 
 function LandingPage() {
   return (
     <>
+  <section id='home'>
   <div className="landing-container">
+    <Header/>
   <div className="landing-content">
     <div className="image-container1">
-      <img src={landing1} alt="Stunning Emails" className="landing-image" />
+      <img src={img2} alt="Stunning Emails" className="landing-image" />
     </div>
 
     <div className="content">
@@ -20,6 +27,7 @@ function LandingPage() {
     </div>
   </div>
 </div>
+  </section>
 
 
     </>
