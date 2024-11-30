@@ -37,12 +37,6 @@ router.post(
     const image = req.files["image"] ? req.files["image"][0].path : null;
     console.log(image);
 
-    if (!image) {
-      return res.status(400).send({
-        success: false,
-        message: "Missing logo", // Sends the first validation error message
-      });
-    }
     if (error) {
       return res.status(400).send({
         success: false,
@@ -61,7 +55,11 @@ router.post(
           image: image,
           user_name: "Abhishek ks",
           company_name: "Zen meraki",
-          feedback_link:
+          order_id: "12345678",
+          carrier_name: "Someone",
+          delivery_date: "10-1-2025",
+          support_email: "123@gmail.com",
+          cta_link:
             "https://www.justdial.com/Kochi/Gladiator-Health-And-Fitness-Centre-Near-By-HP-CARE-Kadavanthara/0484PX484-X484-140508150420-W2K3_BZDET?trkid=&term=&ncatid=11575244&area=&search=Popular%20Gyms%20in%20Kochi&mncatname=Gyms&abd_btn=Send%20Enquiry&abd_heading=Gyms&isOpenAbd=1&bd=1&cat_b2b_flag=0&",
         },
         replyTo
