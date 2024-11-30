@@ -2,6 +2,7 @@ import express from "express";
 import { sendEmail } from "../services/emailService.js";
 import Joi from "joi";
 import { upload } from "../middlewares/uploadMiddleware.js";
+import { authentication } from "../middlewares/jwtMiddleware.js";
 
 const router = express.Router();
 
@@ -31,6 +32,7 @@ const emailValidationSchema = Joi.object({
 // Route with Validation
 router.post(
   "/send",
+  authentication,
   upload.fields([{ name: "image", maxCount: 1 }]),
   async (req, res) => {
     const { error, value } = emailValidationSchema.validate(req.body);

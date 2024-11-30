@@ -59,7 +59,7 @@ export const registerUser = asyncHandler(async (req, res) => {
         message: err.message,
       })),
     });
-  }
+  } 
 
   // Hash Password and Save User
   const hashedPassword = await bcrypt.hash(password, 10);
