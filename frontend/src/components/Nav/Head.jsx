@@ -15,7 +15,7 @@ function Head() {
             <Nav.Link href="/workwith-us" className='text-light'> Work with Us</Nav.Link>
           </Nav>
           <Nav className='justify-content-end'>
-          <Nav.Link href="" className='text-light'><Button variant='light' >Login</Button></Nav.Link>
+          <Nav.Link href="/log-in" className='text-light'><Button variant='light' >Login</Button></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,22 @@
+.login{
+  border-bottom: 1px solid;  
+  border-top: 1px solid;  
+  border-left: 1px solid;  
+  border-right: 1px solid; 
+  border-radius: 10px; 
+  width: 700px;
+}
+.colmn1{
+  width: 300px;
+}
+.colmn2{
+  width: 400px;
+}
+.register{
+    border-bottom: 1px solid;  
+    border-top: 1px solid;  
+    border-left: 1px solid;  
+    border-right: 1px solid; 
+    /* border-radius: 10px;  */
+    width: 700px;
+  }

@@ -1,0 +1,32 @@
+.about-content p {
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #0078d7;
+    font-weight: bold;
+  }
+  .cta-section {
+    /* background-color: #f4f4f4; */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cta-section .cta-button {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .contact{
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+  }
+  
+  
