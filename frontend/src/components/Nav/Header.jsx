@@ -18,6 +18,7 @@ function Header() {
           <Nav className='justify-content-end'>
           <Nav.Link href="/log-in" className='text-light'><Button variant='light' >Login</Button></Nav.Link>
           </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
