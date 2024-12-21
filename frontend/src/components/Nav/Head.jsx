@@ -3,7 +3,7 @@ import{Navbar,Container,Nav, Button} from 'react-bootstrap'
 
 function Head() {
   return (
-    <Navbar expand="lg" bg='dark'>
+    <Navbar expand="lg" bg='' style={{background:"linear-gradient(to right, black, rgba(0, 0, 0, 0.8))"}}>
       <Container>
         <Navbar.Brand href="#home" className='text-light'>Email-Assistant</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
