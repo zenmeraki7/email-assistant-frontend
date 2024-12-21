@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group'; // Import CSSTransition
+import {  useNavigate } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group'; 
 import './Login.css';
-import signupImage from '../assets/images/signup.png';
+import signinImage from '../assets/images/signin.avif';
 
-function Register() {
+function LoginPage() {
   const navigate = useNavigate();
 
-  const handleSignIn = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
-    navigate('/log-in');
+    navigate('/register');
   };
 
   return (
@@ -22,11 +22,11 @@ function Register() {
       >
         <div className="auth-card">
           <div className="auth-left">
-            <img src={signupImage} alt="Sign Up" />
+            <img src={signinImage} alt="Sign In" />
           </div>
 
           <div className="auth-right">
-            <h2>Sign Up</h2>
+            <h2>Sign In</h2>
             
             <form>
               <div className="form-group">
@@ -45,21 +45,13 @@ function Register() {
                 />
               </div>
               
-              <div className="form-group">
-                <input
-                  type="password"
-                  placeholder="Confirm Password"
-                  className="form-control"
-                />
-              </div>
-              
               <button type="submit" className="submit-btn">
-                SIGN UP
+                CONTINUE
               </button>
             </form>
-            
+
             <div className="auth-link">
-              <p>Already have an account? <a href="#" onClick={handleSignIn}>Sign In</a></p>
+              <p>Don't have an account? <a href="#" onClick={handleSignUp}>Sign Up</a></p>
             </div>
           </div>
         </div>
@@ -68,4 +60,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default LoginPage;
