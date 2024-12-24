@@ -1,5 +1,5 @@
 import { Modal, Card } from "react-bootstrap";
-import "./ViewMore.css";
+// import "./ViewMore.css";
 
 function ViewMore({ show, setShow }) {
   const templates = [

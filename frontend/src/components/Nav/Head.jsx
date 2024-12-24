@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import "./Styles.css"; // Include this to manage styles.
+import "./Nav.css"; 
 
 function Head() {
   return (

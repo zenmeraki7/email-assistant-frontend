@@ -1,160 +1,106 @@
-/* Root Variables for Consistency */
-:root {
-  --primary-color: #007bff;
-  --primary-hover-color: #0056b3;
-  --accent-color: #FFD700;
-  --accent-hover-color: #FFC300;
-  --dark-color: #333;
-  --light-color: #f9f9f9;
-  --white: #fff;
-  --gradient-bg: linear-gradient(135deg, #FF6F61, #007BFF, #FFD700);
-  --font-family: Arial, sans-serif;
-  --border-radius: 8px;
-  --box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  --box-shadow-hover: 0px 6px 20px rgba(0, 0, 0, 0.4);
-  --transition-speed: 0.3s ease;
-}
-
-/* General Reset */
-body {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: var(--gradient-bg);
-  color: var(--white);
-  text-align: center;
-}
-
-/* Landing Container */
 .landing-container {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack Header and content vertically */
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #FF6F61, #007BFF, #FFD700);
   background-size: 400% 400%;
   animation: gradient-bg 10s ease infinite;
-  padding: 0;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 0; 
+  margin: 0;
 }
 
-/* Gradient Animation */
 @keyframes gradient-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Landing Content */
 .landing-content {
+  margin-top: 169px; 
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: row; 
   align-items: center;
-  margin-top: 2rem;
-  max-width: 1200px;
+  gap: 30px; 
 }
 
-/* Image Styling */
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  max-width: 500px;
+.image-container1 {
+  flex: 1; 
 }
 
 .landing-image {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  transition: transform var(--transition-speed);
+  border-radius: 15px; 
+  /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); */
+  height: 500px;
 }
 
-.image-container:hover .landing-image {
-  transform: scale(1.05);
-}
-
-/* Content Styling */
 .content {
-  flex: 1;
   max-width: 600px;
   padding: 20px;
-  text-align: left;
+  z-index: 5;
+  text-align: left; /* Align text to the left for better layout balance */
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .subtext {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #f9f9f9;
+  opacity: 0.9;
 }
 
-/* Buttons */
 .button-group {
   display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
   gap: 20px;
-  justify-content: flex-start;
 }
 
-.start-btn,
-.templates-btn {
+.btn {
+  font-size: 1.2rem;
   padding: 15px 30px;
   border: none;
   border-radius: 50px;
-  font-size: 1.2rem;
   cursor: pointer;
-  transition: all var(--transition-speed);
-  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
 }
 
 .start-btn {
-  background: var(--accent-color);
-  color: var(--dark-color);
+  background: #FFD700;
+  color: #333;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  width: 170px;
 }
 
 .start-btn:hover {
-  background: var(--accent-hover-color);
-  box-shadow: var(--box-shadow-hover);
+  background: #FFC300;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .templates-btn {
   background: black;
-  color: var(--light-color);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
 }
 
 .templates-btn:hover {
-  background: var(--primary-hover-color);
-  box-shadow: var(--box-shadow-hover);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .landing-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image-container {
-    max-width: 100%;
-  }
-
-  .landing-image {
-    height: 300px;
-  }
-
-  .button-group {
-    justify-content: center;
-  }
+  background: #0056B3;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }

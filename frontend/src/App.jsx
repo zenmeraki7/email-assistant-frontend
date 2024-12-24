@@ -5,7 +5,7 @@ import Head from './components/Nav/Head';
 import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
 import ContactsUs from './Pages/ContactsUs';
-import WorkWithUs from './Pages/WorkWithUs'; // Corrected name
+import WorkeithUs from './Pages/WorkeithUs'; // Corrected name
 import Register from './Pages/Register';
 import LoginPage from './Pages/LoginPage';
 import 'font-awesome/css/font-awesome.min.css';
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactsUs />} />
-          <Route path="/workwith-us" element={<WorkWithUs />} />
+          <Route path="/workwith-us" element={<WorkeithUs />} />
           <Route path="/log-in" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
         </Routes>

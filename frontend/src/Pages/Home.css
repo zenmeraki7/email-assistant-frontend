@@ -1,167 +1,151 @@
-/* General Styles */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #0056b3;
-  --dark-gray: #41444B;
-  --light-gray: #f8f9fa;
-  --white: #fff;
-  --font-family: Arial, sans-serif;
-  --font-size-large: 2rem;
-  --font-size-medium: 1.5rem;
-  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  --transition-speed: 0.3s ease;
-}
 
-body, .landing-page {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-}
-
-/* Section Titles */
-.section-title {
-  text-align: center;
-  font-size: var(--font-size-large);
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: var(--primary-color);
-  margin: 10px auto;
-  border-radius: 2px;
-}
-
-/* Features Section */
-.features {
-  padding: 50px 0;
-  text-align: center;
-  background: #f4f4f4;
-}
-
-.feature-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: var(--white);
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: var(--box-shadow);
-  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-  text-align: center;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--hover-shadow);
-}
-
-.card .icon {
-  font-size: 2rem;
-  color: #3D3BF3;
-  margin-bottom: 10px;
-}
-
-/* Templates Section */
-.templates {
-  padding: 50px 0;
-  background-color: var(--light-gray);
-}
-
-.template-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-/* Template Cards */
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-speed);
-}
-
-.image-container:hover .card-image {
-  transform: scale(1.1);
-}
-
-.choose-button {
+  
+  /* Features Section */
+  .features {
+    padding: 50px 0;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  
+  .features .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features .feature-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .features .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .features .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .features .icon {
+    font-size: 2rem;
+    color:#3D3BF3;
+    margin-bottom: 10px;
+  }
+  
+  .templates {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  .template-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    justify-items: center;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 16rem;
+    margin-top: 5px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  /* .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  } */
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .btn-sm {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-sm:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .choose-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--dark-gray);
-  color: var(--white);
+  background-color: #41444B;
+  color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 5px;
+  width: 150px;
   border-radius: 4px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition-speed), transform var(--transition-speed);
+  opacity: 0; /* Hide the button */
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1;
 }
 
+/* Button becomes visible on hover */
 .image-container:hover .choose-button {
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1; /* Show the button */
+  pointer-events: auto; /* Allow interaction */
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.card-title {
-  font-size: var(--font-size-medium);
-  font-weight: bold;
-  color: #333;
-  margin-top: 10px;
-}
-
-.btn-sm {
-  background-color: var(--primary-color);
-  color: var(--white);
-  border: none;
-  transition: background-color var(--transition-speed), transform var(--transition-speed);
-}
-
-.btn-sm:hover {
-  background-color: var(--secondary-color);
-  transform: scale(1.05);
-}
-
-/* Hover Effect */
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--hover-shadow);
-}
-
-/* Button Styling */
-.choose-button,
-.btn-sm {
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background var(--transition-speed), transform var(--transition-speed);
-}
-
-.choose-button:hover {
-  background: var(--secondary-color);
+.image-container:hover .card-image {
+  transform: scale(1.1);
 }
